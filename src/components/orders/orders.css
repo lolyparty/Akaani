@@ -1,0 +1,35 @@
+.orders_container{
+    padding:5px 0px 5px 5px;
+}
+
+.order_invite-container{
+    margin-top:20px;
+}
+
+.order_section-containers{
+    padding:15px;
+    height:230px;
+}
+
+.order_section-containers:nth-child(1){
+    border-bottom: 1px solid #F0F0F0;
+}
+
+.order_section-containers:nth-child(2){
+    border-bottom: 1px solid #F0F0F0;
+}
+
+.order_section-containers h3{
+    font-weight: 700;
+    font-size:1rem;
+}
+
+.order_section-containers p{
+    font-weight: 400;
+    color:#AAA8A8;
+    font-size:.75rem;
+}
+
+.order_heading{
+    font-weight:700;
+}
