@@ -1,8 +1,8 @@
 .profile_container{
-    padding:30px 20px;
+    padding:30px 10px;
     /* font-family: 'Poppins'; */
     border-right:1px solid #F0F0F0;
-    width:18%;
+    width:16%;
 }
 
 .logo_container{
@@ -10,7 +10,7 @@
 }
 
 .whitespace{
-    height:30px; 
+    height:25px; 
 }
 
 .profile_nav{

@@ -25,7 +25,7 @@ const Profile = ()=>{
 
 
 
-    return <div className="profile_container">
+    return <section className="profile_container">
                 <div className="logo_container">
                     <img src={logo} alt="Akaani Logo" />
                 </div>
@@ -44,7 +44,7 @@ const Profile = ()=>{
                     <a href="lauraedson@work.com" className="profile_user-email">lauraedson@work.com</a>
                     <button className="profile_user-logout"><img src={logout} alt="Sign out" /></button>
                 </div>
-            </div>
+            </section>
 }
 
 export default Profile
