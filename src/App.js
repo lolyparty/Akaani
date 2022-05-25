@@ -1,9 +1,12 @@
 import './App.css';
+import Profile from './components/Profile-section/Profile'
 
 function App() {
   return (
-    <>
-    Hello</> 
+    <div className='container'>
+    <Profile />
+
+    </div> 
   );
 }
 

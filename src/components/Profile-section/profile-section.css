@@ -1,0 +1,95 @@
+.profile_container{
+    padding:30px 20px;
+    /* font-family: 'Poppins'; */
+    border-right:1px solid #F0F0F0;
+    width:18%;
+}
+
+.logo_container{
+    margin-bottom:15px;
+}
+
+.whitespace{
+    height:30px; 
+}
+
+.profile_nav{
+    margin:20px 0px 20px 0px;
+    
+}
+
+
+.user_tab-btn{
+    display: flex;
+    align-items: center;
+    font-size:1.05rem;
+    background:none;
+    border:none;
+    border-radius:5px;
+    gap:15px;
+    cursor: pointer;
+    padding:13px 0px;
+    margin:35px 0px;
+    font-weight:600;
+    color:#989898;
+    transition: all .3s;
+}
+
+
+.user_tab-btn img{
+    filter: invert(13%) sepia(0%) saturate(1296%) hue-rotate(206deg) brightness(94%) contrast(25%);
+}
+
+.active{
+    background: rgba(84, 154, 154, 1);
+    color:#fff;
+    padding:13px 35px 13px 10px;
+}
+
+.active img{
+    filter: brightness(0) invert(1);
+}
+
+.whitespace_second{
+    height:250px;
+}
+
+.profile_user-container{
+    text-align: center;
+    justify-content: center;
+}
+
+.profile_user-image{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height:70px;
+    width:70px;
+    border-radius: 50%;
+    font-weight:700;
+    font-size:1.5rem;
+    background: #1A8282;
+    color:#fff;
+    margin:10px auto;
+}
+
+.profile_user-name{
+    font-weight:600;
+    margin:10px 0px 5px -5px; 
+}
+
+.profile_user-email{
+    text-decoration: none;
+    color:#C0C0C0;
+    display: block;
+    font-size: .9rem;
+}
+
+.profile_user-logout{
+    margin-top:15px;
+    border:1px solid #C4C4C4;
+    background:none;
+    padding:11px 11px 10px 10px;
+    border-radius: 5px;
+    cursor:pointer;
+}
