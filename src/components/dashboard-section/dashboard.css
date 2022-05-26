@@ -1,7 +1,7 @@
 
 .dashbaord_container{
     padding:15px;
-    width:68%;
+    width:67%;
     border-right:1px solid #F0F0F0;
     position: relative;
 }
@@ -33,15 +33,21 @@
     padding:7px 9px;
     border-radius: 5px;
     border:1px solid #F0F0F0;
-    margin-right:60px;
+    margin-right:50px;
+    width:250px;
   }
 
   .dashboard_input::placeholder{
       font-weight:300;
+      color:#C7C3C3;
+      background:url('../../Img/Vector\ \(27\).svg');
+      background-repeat:no-repeat;
+      padding-left:20px;
   }
 
   .dashboard_cards-container{
     display: flex;
+    flex-wrap: wrap; 
     margin:20px 0px;
     gap:20px;
   }
@@ -58,7 +64,7 @@
   }
 
   .dashboard_card-img-container{
-    padding:13px 11px;
+    padding:13px;
     border-radius: 50%;
     display:flex;
     align-items: center;
@@ -70,20 +76,10 @@
       width:23px;
   }
 
-  .dashboard_card-img-container:nth-child(1){
-    background: #5E7ED233;
-  }
-
-  .dashboard_card-img-container:nth-child(2){
-    background: #56B1A033;
-  }
-
-  .dashboard_card-img-container:nth-child(3){
-    background: #868DB533;
-  }
-  
   .dashboard_card-name{
       font-weight: 400;
+      color:#6B6464;
+      font-size: .9rem;
   }
 
   .dashboard_card-amount{
@@ -144,8 +140,7 @@
   }
 
   .dashboard_basket-detailsImg{
-      padding:15px;
-      height:75px;
+      height:78px;
       width:81px;
       margin:0 auto;
       border-radius:50%;
@@ -163,22 +158,10 @@
       margin-top:10px;
   }
 
-  .cart{
-    background: #549A9A;
-    position: absolute;
-    box-shadow: -1px 3px 10px 3px #8D9898B2;
-    border:none;
-    padding:15px;
-    border-radius: 50%;
+  .dashbaord_container .cart_btn{
     bottom:8%;
-    cursor: pointer;
     right:2%;
   }
-
-  /* .cart img{
-      height:40px;
-      width:30px;
-  } */
 
   .cart_items-number{
       font-family:'Poppins';

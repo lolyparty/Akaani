@@ -19,17 +19,14 @@
     border-bottom: 1px solid #F0F0F0;
 }
 
-.order_section-containers h3{
-    font-weight: 700;
-    font-size:1rem;
-}
 
 .order_section-containers p{
     font-weight: 400;
     color:#AAA8A8;
-    font-size:.75rem;
+    font-size:.73rem;
 }
 
 .order_heading{
+    font-size:.9rem;
     font-weight:700;
 }

@@ -1,21 +1,26 @@
 import { useState } from 'react';
+import CartBtn from '../cartBtn';
+import DashboardCard from './dashboard_card';
 import truck from '../../Img/truck.svg';
 import creditCard from '../../Img/creditcard.svg';
 import gift from '../../Img/gift.svg';
 import shop from '../../Img/shop.svg'
-import cart from '../../Img/shopping basket icon (1).svg'
-import DashboardCard from './dashboard_card';
+import baskets from '../../Img/shop2.svg'
 import './dashboard.css';
 
-const Dashboard = ()=>{
+const Dashboard = ({cartState, setCartState})=>{
 
     const inTransitJobs = 0
     const totalPaid = 0.00.toFixed(2)
     const completedJobs = 0
+    const cartItems = 4
+    const basketNumber = 0
 
     const [search, setSearch] = useState('')
 
     const [activeTab, setActiveTab] = useState('Paid')
+
+    
 
     const searchItem = (e) =>{
         setSearch(e.target.value)
@@ -41,6 +46,11 @@ const Dashboard = ()=>{
         setActiveTab('Completed')
     }
 
+    const openCart =(e)=>{
+        e.preventDefault()
+        setCartState(true)
+    }
+
     
 
     return <section className="dashbaord_container">
@@ -52,9 +62,11 @@ const Dashboard = ()=>{
             </form>
         </div>
         <div className="dashboard_cards-container">
-            <DashboardCard imgSrc={truck} cardName={`In-Transit Jobs`} cardAmount={inTransitJobs} />
-            <DashboardCard imgSrc={creditCard} cardName={`Total Paid`} cardAmount={`$${totalPaid}`} />
-            <DashboardCard imgSrc={gift} cardName={`Completed Jobs`} cardAmount={completedJobs} />
+            {cartState && <DashboardCard imgSrc={baskets} cardName={`Total baskets`} cardAmount={basketNumber} background={'#DA853933'} />}
+            <DashboardCard imgSrc={truck} cardName={`In-Transit Jobs`} cardAmount={inTransitJobs} background={'#5E7ED233'} order={cartState ? 4 : 0}/>
+            <DashboardCard imgSrc={creditCard} cardName={`Total Paid`} cardAmount={`$${totalPaid}`} background={'#56B1A033'} />
+            <DashboardCard imgSrc={gift} cardName={`Completed Jobs`} cardAmount={completedJobs} background={'#868DB533'} />
+            
         </div>
         <div className="dashboard_basket-container">
             <h2 className="dashboard_basket-heading">Baskets</h2>
@@ -73,10 +85,7 @@ const Dashboard = ()=>{
                 <p>{`No ${activeTab} Baskets, yet!`}</p>
             </div>
         </div>
-        <button className="cart">
-                <img src={cart} alt="open cart" /> 
-                <p className="cart_items-number">4</p>
-        </button>
+        <CartBtn cartItems={cartItems} openCart={openCart}/>
     </section>
 }
 

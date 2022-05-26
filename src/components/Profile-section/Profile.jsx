@@ -31,9 +31,9 @@ const Profile = ()=>{
                 </div>
                 <div className="whitespace"></div>
                 <div className="profile_nav">
-                    <button className={`user_tab-btn ${activeTab === 'profile' ? `active` : null}`} onClick={profileTab}><img src={userImg} alt="Profile button"  /> <p>Profile</p></button>
-                    <button className={`user_tab-btn ${activeTab === 'basket' ? `active` : null}`} onClick={basketTab}><img src={baskets} alt="Profile button" /> <p>Baskets</p></button>
-                    <button className={`user_tab-btn ${activeTab === 'history' ? `active` : null}`} onClick={historyTab}><img src={history} alt="Profile button" /> <p>Order History</p></button>
+                    <button className={`user_tab-btn ${activeTab === 'profile' && `active`}`} onClick={profileTab}><img src={userImg} alt="Profile button"  /> <p>Profile</p></button>
+                    <button className={`user_tab-btn ${activeTab === 'basket' && `active`}`} onClick={basketTab}><img src={baskets} alt="Profile button" /> <p>Baskets</p></button>
+                    <button className={`user_tab-btn ${activeTab === 'history' && `active`}`} onClick={historyTab}><img src={history} alt="Profile button" /> <p>Order History</p></button>
                 </div>
                 <div className="whitespace_second"></div>
                 <div className="profile_user-container">

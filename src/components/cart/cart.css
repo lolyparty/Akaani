@@ -1,0 +1,175 @@
+  .cart_container{
+    position:absolute;
+    top:0;
+    right:0;
+    height:100%;
+    width:0px;
+    background:#fff;
+    z-index:1000000;
+    border-left:2px solid #F0F0F0;
+    border-bottom:2px solid #F0F0F0;
+    transition:width .5s;
+}
+
+.cart_content{
+    display:none;
+}
+
+.cart_open{
+    width:460px;
+    padding:30px 20px;
+}
+
+.cart_open .cart_content{
+    display:block;
+    animation:open 2s ease-in-out forwards;
+}
+
+@keyframes open {
+    0%{
+        opacity:0;
+    }
+    100%{
+        opacity:1;
+    }
+}
+
+
+.cart_heading{
+    color:#2E2C2C;
+    display: flex;
+    align-items: center;
+    margin-bottom: 35px;
+}
+
+.cart_heading img{
+    margin-right:25px;
+}
+
+.cart_heading h4{
+    font-weight:600;
+    font-size:1.2rem;
+}
+
+.cart_card-container{
+    background: #56B1A033;
+    padding:20px;
+    display:flex;
+    border-radius:13px;
+    justify-content: space-between;
+    align-items: center;
+    margin-top:10px;
+}
+
+.cart_item-details{
+    display:flex;
+    width:80%;
+    justify-content: space-evenly;
+}
+
+.cart_item-details img{
+    padding:13px 15px;
+    background:#C9E8D9;
+    border-radius: 50%;
+}
+
+.cart_card-container .dashboard_card-amount{
+    font-weight: 700;
+    font-size: 1.1rem;
+    color:#2E2C2C;
+}
+
+.cart_card-container .dashboard_card-name{
+    font-size: .9rem;
+    color:#514D4D;
+}
+
+.cart_card-details{
+    margin-top:5px;
+}
+
+.cart_card-container select{
+    font-family: 'Poppins';
+    font-weight: 700;
+    border: none;
+    height: 30px;
+    border-radius: 5px;
+    padding: 5px 35px 2px 15px;
+    align-self: center;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background:url('../../Img/arrow-down.svg');
+    background-color: #fff;
+    background-position-x: 80%;
+    background-position-y: 14px;
+    background-repeat: no-repeat;
+}
+
+.cart_item-users{
+    display: flex;
+}
+
+.cart_user-container{
+    height:30px;
+    width:30px;
+    display: inline-block;
+    border-radius: 50%;
+    position:relative;
+}
+
+.cart_user{
+    font-weight: 700;
+    color:#fff;
+    font-size:1rem;
+    align-self: center;
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+}
+
+.cart_user-container:not(:first-child){
+    margin-left:-12px;
+}
+
+.cart_checkout-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:10px;
+    border-top:1px solid #F0F0F0;
+    position: absolute;
+    right:0%;
+    width:100%;
+    bottom:1%;
+}
+
+.cart_total{
+    padding:10px 15px 5px 15px;
+}
+
+.card_total-text{
+    color: #2E2C2C8F;
+}
+
+.cart_total-amount{
+    color: #2E2C2C;
+    font-weight: 700;
+}
+
+.cart_checkout-btn button{
+    font-family:'Poppins';
+    padding:10px 25px;
+    color:#fff;
+    background: #549A9A;
+    font-weight: 700;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.cart_container .cart_content .cart_btn{
+    top:2%;
+    right:5%;
+    padding:13px;
+}
