@@ -24,7 +24,7 @@ const Cart =({cartState, setCartState})=>{
                 <div className="cart_content">
                     <CartBtn cartItems={4}/>
                     <div className="cart_heading">
-                        <img src={leftArrow} alt="left arrow" />
+                        <img src={leftArrow} alt="left arrow" onClick={closeCart} />
                         <h4>My Cart</h4>
                     </div>
                     <CartCardItem imgsrc={coconut} itemName={`Okazi Leaves`} itemAmount={30} itemUsers={users1}/>
