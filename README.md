@@ -1,3 +1,8 @@
+## Screenshots of developed webpage
+
+![cart](https://i.postimg.cc/L8mLm8Fr/Akaani.png)
+
+![open cart](https://i.postimg.cc/3x9pNQKW/akaani-open-cart.png)
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
